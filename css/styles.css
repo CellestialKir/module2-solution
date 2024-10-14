@@ -1,0 +1,91 @@
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+.row{
+  width:100%;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Comic Sans MS';
+  padding: 1%
+}
+
+
+div div{
+  background-color:grey;
+  margin: 10px;
+  float:left;
+  position:relative;
+  border: 1px solid black;
+}
+
+div div:nth-child(1){
+      width:30%;
+      
+  }
+  div div:nth-child(2){
+      width:30%
+  }
+    div div:nth-child(3){
+      width:30%
+  }
+
+
+h2{
+  float: right;
+  width: 30%;
+  text-align: center;
+  font-family: 'Comic Sans MS';
+  border: 1px solid black;
+}
+
+div div:nth-child(1) h2{
+  background-color:#d59898; 
+}
+
+div div:nth-child(2) h2{
+  background-color:#c14543;
+  color: white;
+}
+
+div div:nth-child(3) h2{
+  background-color:#e5d198;
+}
+
+p{
+  clear:right;
+  padding:10px;
+}
+
+@media  (min-width:768px) and (max-width:991px){
+  div div:nth-child(1){
+      width:47%;
+  }
+  div div:nth-child(2){
+      width:47%;
+  }
+    div div:nth-child(3){
+      clear:left;
+      float:center;
+      width:96%
+  }
+}
+
+@media (max-width:768px){
+  div div:nth-child(1){
+      clear:both;
+      width:96%
+  }
+  div div:nth-child(2){
+      clear:both;
+      width:96%
+  }
+    div div:nth-child(3){
+      clear:both;
+      width:96%
+  }
+}
